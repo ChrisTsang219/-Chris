@@ -1,0 +1,126 @@
+.korea-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.attraction-card {
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+  padding: 2rem;
+  background-color: whitesmoke;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+.navbar {
+    background: linear-gradient(to right, 
+        #002395 33.3%, 
+        #ffffff 33.3% 66.6%, 
+        #ed2939 66.6%);
+  padding: 1rem 2rem;
+  height: 90px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.attraction-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px cornflowerblue;
+}
+
+.attraction-icon {
+  font-size: 3rem;
+  color: cornflowerblue;
+  margin-bottom: 1rem;
+}
+
+.attraction-card h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.attraction-card ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.attraction-card li {
+  padding: 0.3rem 0;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("./Eiffel_Tower_France_Pic.webp")
+    center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 6rem 2rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.3rem;
+}
+
+.content-section {
+  padding: 3rem 0;
+}
+
+.footer {
+  background:linear-gradient(to right, 
+        #002395 33.3%, 
+        #ffffff 33.3% 66.6%, 
+        #ed2939 66.6%);
+  transition: color 0.3s;
+  color: purple;
+  text-align: center;
+  padding: 2rem;
+  margin-top: 3rem;
+}
+
+/* K-pop Styles */
+.kpop-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kpop-image {
+  max-width: 400px;
+  padding: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* chrismates Section Styles */
+.chrismates-section {
+  background-color: whitesmoke;
+  border: 1px solid cornflowerblue;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.kpop-images {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

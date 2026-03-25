@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="shortcut icon" href="./banana-svgrepo-com.svg" type="image/x-icon" />
+    <title>GoodTrips-Japan</title>
+  </head>
+  <body>
+    <!-- NAVBAR (reuse your existing styles) -->
+    <nav class="navbar">
+      <div class="container navbar-flex">
+        <a href="index.html"><img src="./banana-svgrepo-com.svg" alt="Backroads Travel" class="logo" /></a>
+        </a>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Japan</a></li>
+            <li><a href="services.html">Korean</a></li>
+            <li><a href="tours.html">Taiwan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="main-menu-icons">
+            <li>
+              <a href="http://www.facebook.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" />
+          <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Japan</a></li>
+              <li><a href="services.html">Korean</a></li>
+              <li><a href="tours.html">Taiwan</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO: different visual style -->
+    <section class="hero hero-japan-alt">
+      <div class="container hero-content hero-content-center">
+        <h1>Discover Japan</h1>
+        <p>
+          Explore Japan’s most beautiful towns, castles, and coastlines, each with its own story and atmosphere.
+        </p>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT -->
+    <section class="container content-section">
+      <h2 class="section-title">Must-See Places Across Japan</h2>
+
+      <!-- Japan Grid (different attractions) -->
+      <div class="japan-grid" id="japan-grid">
+        <!-- Kanazawa -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-leaf attraction-icon"></i>
+            <img src="./Featured-image-Kanazawa-castle-in-Kanazawa-Japan.jpg" />
+          </div>
+          <div class="card-body">
+            <h3>Kanazawa – Garden & Samurai Districts</h3>
+            <p>
+              Home to Kenrokuen Garden, one of Japan’s most celebrated landscape gardens, and preserved samurai and teahouse districts.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> Ishikawa Prefectur</li>
+              <li><strong>Best Time:</strong> Spring blossoms & autumn colors</li>
+              <li><strong>Don’t miss:</strong> Kenrokuen, Higashi Chaya District</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Nara (different focus than Korea page) -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-church attraction-icon"></i>
+            <img src="./photo-1530708780517-cc640cf05561.avif" />
+          </div>
+          <div class="card-body">
+            <h3>Nara – Temples & Friendly Deer</h3>
+            <p>
+              Japan’s first permanent capital, where giant Buddha statues, ancient temples, and free-roaming deer share the same park.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> Near Kyoto & Osaka</li>
+              <li><strong>Best Time:</strong> Day trip in any season</li>
+              <li><strong>Don’t Miss:</strong> Todai-ji, Nara Park, Kasuga Shrine</li>  
+            </ul>
+          </div>
+        </article>
+
+        <!-- Nikko -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-landmark attraction-icon"></i>
+            <img src="./Featured-image-Shinkyo-Bridge-over-the-Daiwa-River-Nikko-Japan-1244x700.jpg" />
+          </div>
+          <div class="card-body">
+            <h3>Nikkō – Forest Shrines & Waterfalls</h3>
+            <p>
+              Mountain town known for richly decorated shrines and temples surrounded by cedar forests, plus nearby lakes and waterfalls.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> North of Tokyo</li>
+              <li><strong>Best Time:</strong> Autumn for vivid foliage</li>
+              <li><strong>Don’t Miss:</strong> Tōshō-gū, Kegon Falls, Lake Chūzenji</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Naoshima -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-palette attraction-icon"></i>
+            <img src="./Kagawa_t_id220_1.webp"/>
+          </div>
+          <div class="card-body">
+            <h3>Naoshima – Art Island</h3>
+            <p>
+              A small island filled with modern art museums, outdoor sculptures, and striking architecture by the sea.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> Seto Inland Sea</li>
+              <li><strong>Best Time:</strong> Mild spring and autumn</li>
+              <li><strong>Don’t Miss:</strong> Benesse House Museum, Yayoi Kusama pumpkins</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Takayama -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-house-chimney attraction-icon"></i>
+            <img src="./Takayama-Gifu-Japan-featured.jpg" />
+          </div>
+          <div class="card-body">
+            <h3>Takayama – Old Town in the Mountains</h3>
+            <p>
+              A charming town in the Japanese Alps with wooden merchant houses, morning markets, and nearby traditional farm villages.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> Gifu Prefecture</li>
+              <li><strong>Best Time: </strong> Spring & autumn festivals</li>
+              <li><strong>Don’t Miss:</strong> Sanmachi Old Town, Hida Folk Village</li> 
+          </div>
+        </article>
+
+        <!-- Okinawa -->
+        <article class="attraction-card japan-card">
+          <div class="card-top">
+            <i class="fas fa-water attraction-icon"></i>
+            <img src="./95e95d14-c93c-44b4-a41f-31228faeb33f.webp" />
+          </div>
+          <div class="card-body">
+            <h3>Okinawa – Tropical Blue Seas</h3>
+            <p>
+              Island chain with clear water, coral reefs, and its own distinct culture, perfect for snorkeling and slow beach days.
+            </p>
+            <ul>
+              <li><strong>Region:</strong> Far south of mainland Japan</li>
+              <li><strong>Best Time:</strong> Late spring to early autumn</li>
+              <li><strong>Don’t Miss:</strong> Snorkeling, local food, island hopping</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+
+      <!-- Extra Section: Food & Seasonal Experiences -->
+      <section class="experience-section">
+        <h2>Food & Seasonal Experiences</h2>
+        <p>
+          Each region in Japan has its own specialty dishes and seasonal events, from winter snow festivals to summer fireworks by the sea.
+        </p>
+        <div class="experience-grid">
+          <div class="experience-card">
+            <h3>Spring – Sakura & Picnics</h3>
+            <p>
+              Join locals under the cherry blossoms for hanami picnics in parks, with bento boxes and seasonal sweets.
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3>Summer – Festivals & Fireworks</h3>
+            <p>
+              Many towns host night festivals with food stalls, lanterns, and huge fireworks over rivers and bays.
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3>Autumn – Colorful Mountains</h3>
+            <p>
+              Ride scenic trains or cable cars to see red and gold leaves covering valleys and temple grounds.
+            </p>
+          </div>
+          <div class="experience-card">
+            <h3>Winter – Snow & Hot Springs</h3>
+            <p>
+              Warm up in outdoor hot springs while snow falls around you, especially in the northern and mountain regions.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section footer">
+      <ul class="footer-menu-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Japan</a></li>
+        <li><a href="services.html">Korean</a></li>
+        <li><a href="tours.html">Taiwan</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <ul class="footer-menu-icons">
+        <li>
+          <a href="http://www.facebook.com" target="_blank" class="nav-icon">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com" target="_blank" class="nav-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li>
+          <a href="http://www.twitter.com" target="_blank" class="nav-icon">
+            <i class="fa-brands fa-twitter"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

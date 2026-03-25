@@ -1,0 +1,729 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style2.css" />
+    <link rel="stylesheet" href="./tours.css" />
+    <link rel="shortcut icon" href="./banana-svgrepo-com.svg" type="image/x-icon" />
+    <title>GoodTrips-Japan</title>
+  </head>
+  <body>
+    <!-- NAVBAR (reuse your existing styles) -->
+    <nav class="navbar">
+      <div class="container navbar-flex">
+        <a href="index.html"><img src="./banana-svgrepo-com.svg" alt="Backroads Travel" class="logo" /></a>
+        </a>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Japan</a></li>
+            <li><a href="services.html">Korean</a></li>
+            <li><a href="tours.html">Taiwan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="main-menu-icons">
+            <li>
+              <a href="http://www.facebook.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.instagram.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="mobile-menu">
+          <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu-checkbox" />
+          <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Japan</a></li>
+              <li><a href="services.html">Korean</a></li>
+              <li><a href="tours.html">Taiwan</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO: different visual style -->
+   <header class="hero">
+        <div class="hero-content">
+            <h1>Discover Trips</h1>
+            <p>Create your story</p>
+            <div class="search-bar">
+                <input type="text" placeholder="Where you want to go？">
+                <input type="date">
+                <button>Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="destinations">
+        <h2 class="section-title">Popular destinations</h2>
+        <div class="card-container">
+            <div class="card">
+                <div class="card-img" style="background-image: url('./japan-shibuya-crossing_2x1.avif');"></div>
+                <div class="card-body">
+                    <h3>Japan</h3>
+                    <p>Experience the perfect fusion of modern prosperity and traditional temples.</p>
+                    <span class="price">HKD$ 12,800 up</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('./shutterstock_1995760526-e1684993797339-1024x646.jpg');"></div>
+                <div class="card-body">
+                    <h3>Korean</h3>
+                    <p>Experience the culture and warmth of the Korean people.</p>
+                    <span class="price">HKD$ 13,500 up</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('./taibei.jpg');"></div>
+                <div class="card-body">
+                    <h3>Twaiwan</h3>
+                    <p>Let's go to Taipei together to see one of the world's landmarks.</p>
+                    <span class="price">HKD$ 10,000 </span>
+                </div>              
+            </div>
+            <div class="card">
+                <div class="card-img" style="background-image: url('./GettyImages-135034702.webp');"></div>
+                <div class="card-body">
+                    <h3>France</h3>
+                    <p>Experience a country full of Western culture together</p>
+                    <span class="price">HDK$ 20,000 up</span>
+                </div>
+        </div>
+    </section>
+
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
+     <style>
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
+                url('https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1600&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+
+.search-bar {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+.search-bar input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.destinations {
+    padding: 80px 8%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body h3 {
+    margin-bottom: 10px;
+}
+
+.card-body p {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.price {
+    color: #ff7e5f;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .hero-content h1 { font-size: 2.5rem; }
+    .search-bar { flex-direction: column; }
+}
+.navbar {
+  background: navajowhite;
+  padding: 1rem 2rem;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.navbar .mobile-menu {
+  display: none;
+  position: relative;
+}
+.mobile-menu-checkbox {
+  display: none;
+}
+.mobile-menu-toggle {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--clr-white);
+}
+.mobile-menu-items {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--clr-primary-5);
+  z-index: 10;
+}
+.mobile-menu-checkbox:checked ~ .mobile-menu-items {
+  display: block;
+}
+.mobile-menu-list {
+  padding: 1rem;
+}
+.mobile-menu-list li {
+  margin: 0.5rem 0;
+}
+.mobile-menu-list a {
+  color: var(--clr-white);
+  font-size: 1.2rem;
+}
+
+      .footer {
+        background-color: navajowhite;
+        color: white;
+        text-align: center;
+        padding: 2rem;
+        margin-top: 3rem;
+      }
+
+      /* Timeline */
+      .timeline {
+        position: relative;
+        padding: 2rem 0;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+      .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(to bottom, var(--primary), #f8d7d5);
+        transform: translateX(-50%);
+      }
+      .timeline-item {
+        position: relative;
+        width: 48%;
+        padding: 1rem 2%;
+        margin-bottom: 3rem;
+      }
+      .timeline-item:nth-child(odd) {
+        left: 0;
+        text-align: right;
+        padding-right: 4rem;
+      }
+      .timeline-item:nth-child(even) {
+        left: 52%;
+        padding-left: 4rem;
+      }
+
+      .timeline-dot {
+        position: absolute;
+        top: 1.5rem;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        background: var(--primary);
+        border: 4px solid white;
+        box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.3);
+        z-index: 2;
+      }
+      .timeline-item:nth-child(odd) .timeline-dot {
+        right: -8px;
+      }
+      .timeline-item:nth-child(even) .timeline-dot {
+        left: -8px;
+      }
+
+      .timeline-card {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s;
+      }
+      .timeline-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+      }
+      .timeline-year {
+        font-size: 0.85rem;
+        font-weight: 700;
+        color: var(--primary);
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 0.5rem;
+      }
+      .timeline-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      /* Triple Weather */
+      .weather-live {
+        background: var(--bg);
+        border-radius: 20px;
+        padding: 2.5rem;
+        box-shadow: 0 16px 40px rgba(0, 0, 0, 0.06);
+        margin: 3rem 0;
+        color: black;
+      }
+      .weather-loading {
+        font-size: 1.1rem;
+        color: var(--text-muted);
+        text-align: center;
+        padding: 2rem;
+      }
+      .weather-error {
+        color: #e74c3c;
+        background: #fdf2f2;
+        padding: 1rem;
+        border-radius: 8px;
+        margin: 1rem 0;
+        text-align: center;
+      }
+
+      .weather-cities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+        margin-top: 1rem;
+      }
+      .weather-city {
+        background: white;
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        border-top: 4px solid var(--primary);
+        transition: transform 0.2s;
+      }
+      .weather-city:hover {
+        transform: translateY(-2px);
+      }
+      .weather-city.hongkong {
+        border-top-color: #3498db;
+      }
+      .weather-city.tokyo {
+        border-top-color: #e67e22;
+      }
+      .weather-city.seoul {
+        border-top-color: #9b59b6;
+      }
+
+      .weather-temp {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin: 0.2rem 0;
+        color: black;
+      }
+      .weather-desc {
+        font-size: 1rem;
+        text-transform: capitalize;
+        color: black;
+        margin-bottom: 1rem;
+      }
+      .weather-icon {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        color: black;
+      }
+      .weather-details {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        font-size: 0.9rem;
+        color: black;
+      }
+      .weather-detail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.3rem 0;
+        color: black;
+      }
+
+      .weather-title {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 0.8rem;
+        background: rgba(192, 57, 43, 0.1);
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        display: inline-block;
+        color: black;
+
+      }
+      .weather-city.hongkong .weather-title {
+        background: rgba(52, 152, 219, 0.1);
+        color: black;
+      }
+      .weather-city.tokyo .weather-title {
+        background: rgba(230, 126, 34, 0.1);
+        color: black;
+      }
+      .weather-city.seoul .weather-title {
+        background: rgba(155, 89, 182, 0.1);
+        color: black;
+      }
+
+      @media (max-width: 768px) {
+        .weather-cities {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+        .timeline::before {
+          left: 20px;
+        }
+        .timeline-item,
+        .timeline-item:nth-child(even) {
+          width: calc(100% - 40px);
+          left: 40px !important;
+          text-align: left;
+          padding: 0;
+        }
+        .timeline-dot {
+          left: -28px !important;
+        }
+        .weather-temp {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Your exact navbar -->
+    <nav class="navbar">
+      <div class="container navbar-flex">
+        <a href="index.html"
+          ><img
+            src="./banana-svgrepo-com.svg"
+            alt="GoodTrips Travel"
+            class="logo"
+        /></a>
+        <div class="main-menu">
+          <ul class="main-menu-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Japan</a></li>
+            <li><a href="services.html">Korean</a></li>
+            <li><a href="tours.html">Taiwan</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <ul class="main-menu-icons">
+            <li>
+              <a
+                href="http://www.facebook.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://www.instagram.com"
+                target="_blank"
+                class="nav-icon"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="http://www.twitter.com" target="_blank" class="nav-icon">
+                <i class="fa-brands fa-twitter"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mobile-menu">
+          <input
+            type="checkbox"
+            id="mobile-menu-toggle"
+            class="mobile-menu-checkbox"
+          />
+          <label for="mobile-menu-toggle" class="mobile-menu-toggle">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">Japan</a></li>
+              <li><a href="services.html">Korean</a></li>
+              <li><a href="tours.html">About us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <h1>Our Journey & Live Weather</h1>
+        <p>
+          Company timeline plus real-time conditions across Hong Kong, Japan,
+          and South Korea.
+        </p>
+      </section>
+
+      
+
+      <!-- Live Weather -->
+      <section id="weather" class="container">
+        <h2 class="section-title">Live Weather: Hong Kong, Tokyo, Seoul</h2>
+        <p class="section-subtitle">
+          We've designed a real-time weather report so that customers planning
+          to travel to the area can know the current weather conditions. The
+          weather report updates automatically every 10 minutes.
+        </p>
+
+        <div class="weather-live">
+          <div id="weather-loading" class="weather-loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading live weather...
+          </div>
+          <div
+            id="weather-error"
+            class="weather-error"
+            style="display: none"
+          ></div>
+          <div id="weather-display" style="display: none"></div>
+        </div>
+      </section>
+      <footer class="section footer">
+        <ul class="footer-menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">Japan</a></li>
+          <li><a href="services.html">Korean</a></li>
+          <li><a href="tours.html">Taiwan</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <ul class="footer-menu-icons">
+          <li>
+            <a href="http://www.facebook.com" target="_blank" class="nav-icon">
+              <i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.instagram.com" target="_blank" class="nav-icon">
+              <i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="http://www.twitter.com" target="_blank" class="nav-icon">
+              <i class="fa-brands fa-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </footer>
+      <script src="./script.js"></script>
+    </main>
+
+    <!-- Include your existing script.js if needed -->
+    <script src="./script.js"></script>
+    <script>
+      // Live weather for Hong Kong, Tokyo, Seoul (same as before)
+      async function fetchTripleWeather() {
+        const loadingEl = document.getElementById("weather-loading");
+        const displayEl = document.getElementById("weather-display");
+        const errorEl = document.getElementById("weather-error");
+
+        try {
+          loadingEl.style.display = "block";
+          displayEl.style.display = "none";
+          errorEl.style.display = "none";
+
+          const urls = [
+            `https://api.open-meteo.com/v1/forecast?latitude=22.3193&longitude=114.1694&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=Asia/Hong_Kong&forecast_days=1`,
+            `https://api.open-meteo.com/v1/forecast?latitude=35.6762&longitude=139.6503&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=Asia/Tokyo&forecast_days=1`,
+            `https://api.open-meteo.com/v1/forecast?latitude=37.5665&longitude=126.9780&current=temperature_2m,relative_humidity_2m,apparent_temperature,precipitation,weather_code,wind_speed_10m&timezone=Asia/Seoul&forecast_days=1`,
+          ];
+
+          const responses = await Promise.all(urls.map((url) => fetch(url)));
+          const data = await Promise.all(responses.map((res) => res.json()));
+
+          const weatherCodes = {
+            0: { icon: "☀️", desc: "Clear sky" },
+            1: { icon: "🌤️", desc: "Mainly clear" },
+            2: { icon: "⛅", desc: "Partly cloudy" },
+            3: { icon: "☁️", desc: "Overcast" },
+            45: { icon: "🌫️", desc: "Fog" },
+            61: { icon: "🌦️", desc: "Light rain" },
+            63: { icon: "🌧️", desc: "Rain" },
+            65: { icon: "⛈️", desc: "Heavy rain" },
+          };
+
+          const cities = [
+            { name: "Hong Kong SAR", class: "hongkong", tz: "Asia/Hong_Kong" },
+            { name: "Tokyo, Japan", class: "tokyo", tz: "Asia/Tokyo" },
+            { name: "Seoul, South Korea", class: "seoul", tz: "Asia/Seoul" },
+          ];
+
+          displayEl.innerHTML = cities
+            .map((city, i) => {
+              const current = data[i].current;
+              const info = weatherCodes[current.weather_code] || {
+                icon: "🌤️",
+                desc: "Weather update",
+              };
+              const now = new Date().toLocaleString("en-HK", {
+                timeZone: city.tz,
+              });
+
+              return `
+            <div class="weather-city ${city.class}">
+              <div class="weather-title">${city.name}</div>
+              <div class="weather-icon">${info.icon}</div>
+              <div class="weather-temp">${current.temperature_2m}°C</div>
+              <div class="weather-desc">${info.desc}</div>
+              <div class="weather-details">
+                <div class="weather-detail"><i class="fas fa-thermometer-half"></i> Feels: ${current.apparent_temperature.toFixed(1)}°C</div>
+                <div class="weather-detail"><i class="fas fa-tint"></i> Humidity: ${current.relative_humidity_2m}%</div>
+                <div class="weather-detail"><i class="fas fa-wind"></i> Wind: ${current.wind_speed_10m.toFixed(1)} km/h</div>
+                <div class="weather-detail"><i class="fas fa-cloud-rain"></i> Precip: ${current.precipitation > 0 ? current.precipitation + "mm" : "Dry"}</div>
+              </div>
+              <small style="opacity: 0.7; display: block; margin-top: 1rem;">${now}</small>
+            </div>
+          `;
+            })
+            .join("");
+
+          loadingEl.style.display = "none";
+          displayEl.style.display = "block";
+        } catch (error) {
+          errorEl.innerHTML = `<i class="fas fa-exclamation-triangle"></i> Could not load live weather. Please check your connection.`;
+          errorEl.style.display = "block";
+          loadingEl.style.display = "none";
+        }
+      }
+
+      window.addEventListener("load", fetchTripleWeather);
+      setInterval(fetchTripleWeather, 10 * 60 * 1000);
+    </script> 
+    </section>
+  
+    </section>  
+
+    <script src="./script.js"></script>
+  </body>
+</html>     
